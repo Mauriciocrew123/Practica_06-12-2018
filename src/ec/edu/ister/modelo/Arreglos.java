@@ -27,8 +27,21 @@ public static String[] randomicos(){
     }
     return array;
 }    
-    
-
+     public static String[] suma(){
+       String array[]=new String[Integer.parseInt(JOptionPane.showInputDialog(null,"La suma es:"+suma()))];
+       for (int i = 0; i < array.length; i++) {
+           array[i] +=array.length;
+       }
+       return array;
+   }
+       public static String[] promedio(){
+       String array[]=new String[Integer.parseInt(JOptionPane.showInputDialog(null,"el promedio es:"))];
+       float promedio,suma=0;
+       for (int i = 0; i < array.length; i++) {
+           array[i] +=array.length;
+       }
+       return array;
+   }
 }
 
 

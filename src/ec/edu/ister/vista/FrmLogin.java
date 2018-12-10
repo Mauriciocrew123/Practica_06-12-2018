@@ -162,9 +162,14 @@ public class FrmLogin extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(lstRandom);
 
-        jButton4.setText("jButton4");
+        jButton4.setText("suma ");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
-        jButton5.setText("jButton4");
+        jButton5.setText("promedio ");
 
         jButton6.setText("jButton4");
 
@@ -279,6 +284,21 @@ public class FrmLogin extends javax.swing.JFrame {
         
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+                                         
+        JOptionPane.showMessageDialog(null,"la suma es: ");
+         cbxDatos.setModel(new DefaultComboBoxModel<>(Arreglos.suma()));
+        lstRandom.setModel(new javax.swing.AbstractListModel<String>() {
+            
+            String[] array =Arreglos.suma(); //{ "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            
+           
+              public int getSize() { return array.length; }
+            public String getElementAt(int i) { return array[i]; }
+        });
+         // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
